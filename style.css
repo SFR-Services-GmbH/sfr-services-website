@@ -3,8 +3,8 @@
   --ink-soft: #45566e;
   --paper: #f7f8fa;
   --line: #e2e6ec;
-  --accent: #1c5cff;
-  --accent-ink: #0d3fc4;
+  --accent: #662d91;
+  --accent-ink: #4b1f6c;
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +48,7 @@ header.site .wrap {
   color: var(--ink);
 }
 
-.brand svg { display: block; }
+.brand svg, .brand img { display: block; height: 34px; width: auto; }
 
 .brand-name {
   font-weight: 700;
