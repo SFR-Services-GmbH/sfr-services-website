@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 1,
+  "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort."
+}
