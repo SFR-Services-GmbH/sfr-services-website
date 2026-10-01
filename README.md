@@ -62,3 +62,28 @@ Seiten ungenau.
 3. Liegt die Seite in einem Unterordner, zeigen die Verweise auf `style.css`,
    `lang.js`, `logo.png` und die Symbole mit `../` nach oben.
 4. Rechtsseiten bekommen `<meta name="robots" content="noindex, follow">`.
+
+## Dumpling Party: feste Adressen und Levelpacks
+
+Ausgelieferte Builds der App kennen genau diese Adressen; sie bleiben stabil
+(Block 8, ST-484, ENT-722, ENT-724):
+
+| Adresse | Zweck |
+|---|---|
+| `/dumpling-party/zeit.json` | Bootstrap: Zeitquelle (Date-Kopfzeile) und optional `levelPack` |
+| `/dumpling-party/levels/levels-v<N>.json` | Levelpack Version N, nach Veroeffentlichung unveraenderlich |
+| `/dumpling-party/datenschutz.html` | Datenschutz der App |
+
+- `.nojekyll` liegt im Wurzelverzeichnis: Pages liefert die Dateien unveraendert aus.
+- Ein Pack wird nur ueber `python3 scripts/levelpack_publish.py --pack <datei>
+  --min-build <n> [--push]` veroeffentlicht. Das Skript verweigert eine
+  vorhandene oder kleinere Versionsnummer, traegt die Pruefsumme in
+  `dumpling-party/levels/SHA256SUMS` ein (nur anhaengen) und setzt
+  `levelPack` in `zeit.json`. Gebaut wird das Pack im Spiel-Repo
+  (`tools/levelpack/`).
+- `.github/workflows/dumpling-party.yml` prueft bei jedem Push mit
+  `scripts/dumpling_check.py repo`, dass keine veroeffentlichte Version
+  geaendert wurde, und taeglich um 04:17 UTC mit `scripts/dumpling_check.py
+  live` Status, Inhalt und Kopfzeilen aller festen Adressen. Ein Fehler
+  laesst den Lauf scheitern und oeffnet ein Issue. Mit dem Schalter
+  `testfehler` (manueller Start) laesst sich die Meldung selbst pruefen.

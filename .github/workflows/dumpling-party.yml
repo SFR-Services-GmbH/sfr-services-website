@@ -1,0 +1,43 @@
+name: Dumpling Party Adressen
+
+# ST-484: jede Aenderung an main prueft, dass keine veroeffentlichte
+# Packversion ueberschrieben wurde. ST-485: taeglich prueft eine Probe Status,
+# Inhalt und Kopfzeilen aller festen Adressen. Ein Fehler laesst den Lauf
+# scheitern (GitHub meldet das per Mail) und oeffnet ein Issue.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+    inputs:
+      testfehler:
+        description: "Zusaetzlich eine fehlende Adresse pruefen (belegt die Fehlermeldung)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Ablage im Repo
+        run: python3 scripts/dumpling_check.py repo --vorher "${{ github.event.before }}"
+      - name: Live-Adressen
+        if: github.event_name != 'push'
+        run: python3 scripts/dumpling_check.py live ${{ inputs.testfehler && '--zusatz gibt-es-nicht.json' || '' }}
+      - name: Fehler als Issue melden
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "${{ github.repository }}" \
+            --title "Dumpling Party: Adresspruefung fehlgeschlagen ($(date -u +%F))" \
+            --body "Lauf: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} (Ereignis ${{ github.event_name }})"
