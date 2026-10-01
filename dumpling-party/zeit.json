@@ -1,4 +1,11 @@
 {
   "schemaVersion": 1,
-  "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort."
+  "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort.",
+  "levelPack": {
+    "version": 1,
+    "path": "levels/levels-v1.json",
+    "sha256": "f02e2b5d9b6656a378da80ca6eb91305a5f5a6abe721f9e78e3b21048b411d65",
+    "rules": "r1",
+    "minBuild": 811
+  }
 }
