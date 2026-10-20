@@ -2,11 +2,10 @@
   "schemaVersion": 1,
   "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort.",
   "levelPack": {
-    "version": 5,
-    "path": "levels/levels-v5.json",
-    "sha256": "10531143acc2fdf9f1080434a82b8a1ae6344f700a7dc661d8017e31dcbb06ea",
+    "version": 6,
+    "path": "levels/levels-v6.json",
+    "sha256": "3211730a672a0c5ba24f7843ad449012e95e6950d4fe951715dcd487dd58ac3f",
     "rules": "r2",
-    "minBuild": 820,
-    "signature": "C6ma8CTIzWX3xGrIhfUXeXKYpk67+jz9Ash4DdnGttP780wcq5F7VhoAjVRYXAKOptFmy2mcUvkrmmGP4vKAxa2PjQjvP20rz6UotJI9PChmBkKCowKGRbs39oFgel3QVrSVqskmfecF56AHvUHggGV7ur9sQTlBCqCi8nxr5v7zkMR+3Xz17H0qJ9Ix8OiV9Zhvf2++UeS1r++q+EUwewNt2wqvDETcZu6Do+XCPVhW4Jx8pGEdrh8ZwSPm4BBmYiQRTssgI6/11nEReUUNupoZX7cpI7/cs/uFC4EKXerWikRH6noOp3wIiKuZ7skj6WbTXGGwWHHiAPLCCdvzNI7mHkmiSGSga3KyAvhk+NrSSK0Z1EJ1/X8F44lXl9l63YEqXis9k3vnQoAnuB9LlA33Oy2xWT4JYZnhxTeHZA1DTN7JTuk6SlN76Su+zZDWyGFnH+Cd4uFiCWEWDm6YxvlkhlQ+euVmxTMX/ZWqpPkEgwuHHHEFA2Q6hdF6mAx/"
+    "minBuild": 820
   }
 }
