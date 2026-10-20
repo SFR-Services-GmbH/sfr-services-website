@@ -6,6 +6,7 @@
     "path": "levels/levels-v6.json",
     "sha256": "3211730a672a0c5ba24f7843ad449012e95e6950d4fe951715dcd487dd58ac3f",
     "rules": "r2",
-    "minBuild": 820
+    "minBuild": 820,
+    "signature": "ZYYNXAFPdNyO7HRW7hU4Z7Ej2Vtxo2wy7dBHsXh5HjLHyIMKmDsgnMDJy32Hiiv1bxc3g7y57nsT3dWkenWo01xfollfy7PJzdFX/5iQKWVF3/7DhWtsdDL7YhKntnUeMPn52kIXlfiR/5hfb271OKzV2Kf9U5H2ds5XJqMebHvY8KflqGc7rF+A3JjGAwg5/5HZi/tmY3pHD71mM6x6V0mQjjEjJ3GIQN7+ac02MDeRo4ChlWDOgdv7AcblMTJelq/ZvY/3jpwetFafhEJhne/qXRayuomUbX2tbO3D/HDI4VYiBab03bqa2i9BpVb/CQbl9jb52OAedprb1vRR6hoNF4v9s5MRxynTGbv6SdvW8OS92k/B6H6LHhAtDWgXabdUQ3muF5FtnkyU79uJ2RdK/cXQfKdHpvvscy9lUndlAX7lDvdXTKATdmVD0YQ7LvEiq/pEP6fNd9nB++cv9GCw5A0Rlz5lZgSIAV/kkOSOoxVBrF7bD1C+7iMfhdzu"
   }
 }
