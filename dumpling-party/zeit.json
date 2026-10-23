@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort.",
   "levelPack": {
-    "version": 6,
-    "path": "levels/levels-v6.json",
-    "sha256": "3211730a672a0c5ba24f7843ad449012e95e6950d4fe951715dcd487dd58ac3f",
-    "rules": "r2",
-    "minBuild": 820,
-    "signature": "ZYYNXAFPdNyO7HRW7hU4Z7Ej2Vtxo2wy7dBHsXh5HjLHyIMKmDsgnMDJy32Hiiv1bxc3g7y57nsT3dWkenWo01xfollfy7PJzdFX/5iQKWVF3/7DhWtsdDL7YhKntnUeMPn52kIXlfiR/5hfb271OKzV2Kf9U5H2ds5XJqMebHvY8KflqGc7rF+A3JjGAwg5/5HZi/tmY3pHD71mM6x6V0mQjjEjJ3GIQN7+ac02MDeRo4ChlWDOgdv7AcblMTJelq/ZvY/3jpwetFafhEJhne/qXRayuomUbX2tbO3D/HDI4VYiBab03bqa2i9BpVb/CQbl9jb52OAedprb1vRR6hoNF4v9s5MRxynTGbv6SdvW8OS92k/B6H6LHhAtDWgXabdUQ3muF5FtnkyU79uJ2RdK/cXQfKdHpvvscy9lUndlAX7lDvdXTKATdmVD0YQ7LvEiq/pEP6fNd9nB++cv9GCw5A0Rlz5lZgSIAV/kkOSOoxVBrF7bD1C+7iMfhdzu"
+    "version": 7,
+    "path": "levels/levels-v7.json",
+    "sha256": "54684c02907ccb02bb77a60485137643ad4df9d847b427c56a427d9455e04cfc",
+    "rules": "r3",
+    "minBuild": 821,
+    "signature": "LYO30U8HtCodFbHXniVUa3rOLMpI3YHVj825bkRFKnpxwuQqODnav3wqLZwuiuMCadsnZ5n3SrlOBp6IK6uDzOghI3wkTehGGMbNP5U2/jezTSCB/5xxdNuiUnqk43A+r0tlpme6qGOspjOKSodPQua9VW+fwXYxBUGkrIUnEagQm3hreCCiHnrJ+LQsaFfjuSuXg1gFl/kIrhtlBBywq91Mz5Lch4/ZVEUP+D7wal7F+0GCxV4sQFzLC03jVV7sKQbzjV85erbLBDlUSSUYnw/30X/m92gi+4ekjVZBu052Sy02Rp3gzAIcgjZexMIc1Fvegq2KsiKmh5nugSLBpSiMt4gTSzyoTORyHc9Emue4Zrxi5ncwsVFykuZOtwypK6GYc/a1HX+Z497gd0apAv2FsIdYUly9DoJmbkCeq0QyLvRME1hm4GhKr/VvM/+9PYZnXQBwr5ZGKf1xzMyWgwRLL/u5kIWWkuX/HrtGql7sbI2YlxUp3eheI6KMNro8"
   }
 }
