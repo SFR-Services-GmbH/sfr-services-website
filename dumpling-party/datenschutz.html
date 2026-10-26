@@ -30,10 +30,9 @@
 <main>
   <div class="wrap legal">
 
-
     <div data-i18n="de">
       <h1>Datenschutzerklärung für die App „Dumpling Party“</h1>
-      <p class="subtitle">Stand: Oktober 2026</p>
+      <p class="subtitle">Stand: 25. Oktober 2026</p>
 
       <h2>1. Verantwortlicher</h2>
       <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer datenschutzrechtlicher Bestimmungen ist:</p>
@@ -51,7 +50,7 @@
       <h2>2. Das Wesentliche zuerst</h2>
       <p>Dumpling Party ist ein Spiel ohne Benutzerkonto und ohne Anmeldung. Ihr Spielstand bleibt auf Ihrem Gerät. Die App verbindet sich nur in den folgenden Fällen mit dem Internet:</p>
       <ul>
-        <li>Sie liest die aktuelle Uhrzeit und Spielwerte aus statischen Dateien auf unserer Website (Ziffer 4).</li>
+        <li>Sie liest bei jedem Start die aktuelle Uhrzeit (Datei zeit.json) und bei Bedarf ein Paket mit Levelwerten (Levelpack) aus statischen Dateien auf unserer Website (Ziffer 4).</li>
         <li>Sie überträgt Nutzungsereignisse an Firebase Analytics – <strong>nur wenn Sie zugestimmt haben</strong> (Ziffer 5).</li>
         <li>Sie überträgt Absturzberichte an Firebase Crashlytics – <strong>nur wenn Sie der Auswertung zugestimmt haben</strong> (Ziffer 6).</li>
         <li>Sie zeigt Werbevideos über Unity LevelPlay, wenn Sie selbst eines anfordern (Ziffer 9).</li>
@@ -61,18 +60,18 @@
       <p>Die App fordert keine Berechtigung für Kamera, Mikrofon, Standort oder Kontakte an und liest Ihre Fotos nicht. Um die Erlaubnis für Mitteilungen bittet sie erst, wenn Ihre Herzen aufgebraucht sind, und nur ein einziges Mal (Ziffer 7). Sichern Sie einen Schnappschuss in Ihren Fotos, fragt iOS dafür um Erlaubnis (Ziffer 8). Außerdem kann die Tracking-Abfrage von Apple erscheinen (Ziffer 9).</p>
 
       <h2>3. Daten auf Ihrem Gerät</h2>
-      <p>Die App legt einen Spielstand im geschützten Bereich der App auf Ihrem Gerät ab. Er enthält Spielfortschritt und Einstellungen, zum Beispiel abgeschlossene Level, Ihre Antworten auf die Einwilligungsfragen und ob starke Umrisse eingeschaltet sind. Er enthält keine Angaben zu Ihrer Person und wird nicht an uns übertragen. Daneben liegen dort der Stand der Erinnerungen (ob sie eingeschaltet sind, ob die App schon um Erlaubnis gefragt hat, an welchem Tag zuletzt eine Erinnerung kam und wann die nächste geplant ist) und der Vermerk, ob die App schon einmal um eine Bewertung gebeten hat (Ziffer 7 und 8). Wenn Sie die App löschen, wird der Spielstand mit ihr entfernt.</p>
+      <p>Die App legt einen Spielstand im geschützten Bereich der App auf Ihrem Gerät ab. Er enthält Spielfortschritt und Einstellungen, zum Beispiel abgeschlossene Level, Sterne, Ihre Siegesserie, Ihren Vorrat an Mitbringseln, den Stand von Tagesaufgabe und Wochenend-Fest, an welchem Tag Sie das Tagesgeschenk zuletzt ausgepackt haben, Ihre Antworten auf die Einwilligungsfragen und ob starke Umrisse eingeschaltet sind. Er enthält keine Angaben zu Ihrer Person und wird nicht an uns übertragen. Daneben liegen dort der Stand der Erinnerungen (ob sie eingeschaltet sind, ob die App schon um Erlaubnis gefragt hat, an welchem Tag zuletzt eine Erinnerung kam und wann die nächste geplant ist) und der Vermerk, ob die App schon einmal um eine Bewertung gebeten hat (Ziffer 7 und 8). Das Tagesgeschenk (ein Mitbringsel beim ersten Öffnen eines Tages) vergibt die App allein anhand dieses Spielstands und der Uhrzeit; dafür wird nichts übertragen und keine Mitteilung gesendet. Wenn Sie die App löschen, wird der Spielstand mit ihr entfernt.</p>
       <p>Hinweis: Sofern Sie die iCloud-Gerätesicherung von Apple aktiviert haben, kann Ihr Gerät den App-Bereich im Rahmen dieser Sicherung mitsichern. Das steuern Sie in den iOS-Einstellungen; wir haben darauf keinen Zugriff.</p>
 
       <h2>4. Uhrzeit und Spielwerte von unserer Website</h2>
-      <p>Damit Wartezeiten nicht durch Verstellen der Geräteuhr umgangen werden, liest die App die Uhrzeit aus der Antwort unserer Website sfr-services.de. Über dieselbe Website kann die App eine Datei mit Spielwerten laden, etwa zur Schwierigkeit einzelner Level. Dabei werden keine Daten über Sie gesendet, nur der Abruf selbst.</p>
-      <p>Die Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Abruf verarbeitet GitHub technisch notwendig Ihre IP-Adresse und Angaben zum Abruf (Zeitpunkt, abgerufene Datei). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt in einem fairen und aktuellen Spielablauf. Für die Übermittlung in die USA stützt sich GitHub auf das EU-US Data Privacy Framework und Standardvertragsklauseln. Weitere Angaben: docs.github.com/site-policy/privacy-policies.</p>
+      <p>Damit Wartezeiten nicht durch Verstellen der Geräteuhr umgangen werden, liest die App bei jedem Start die Uhrzeit aus der Antwort unserer Website sfr-services.de (Datei zeit.json). Dieselbe Datei nennt Spielwerte wie Herzzeit, Angebots- und Werbewerte sowie die Fassung des aktuellen Levelpacks; ist dort ein neueres Levelpack genannt, lädt die App es als zweite Datei von derselben Website (nur Werte bestehender Level, etwa zur Schwierigkeit). Beide Abrufe geschehen auch vor und ohne jede Einwilligung; sie sind keine Auswertung. Dabei werden keine Daten über Sie gesendet, nur der Abruf selbst mit einem Zeitstempel gegen Zwischenspeicher.</p>
+      <p>Die Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Abruf verarbeitet GitHub technisch notwendig Ihre IP-Adresse und Angaben zum Abruf (Zeitpunkt, abgerufene Datei, technische Kennung der abrufenden App und Ihres Systems im Abruf). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt in einem fairen und aktuellen Spielablauf. Für die Übermittlung in die USA stützt sich GitHub auf das EU-US Data Privacy Framework und Standardvertragsklauseln. Weitere Angaben: docs.github.com/site-policy/privacy-policies.</p>
 
       <h2>5. Auswertung mit Firebase Analytics (nur mit Einwilligung)</h2>
-      <p>Nach Ihrem ersten gewonnenen Level fragt die App in einem eigenen Schritt, ob sie auswerten darf, wie das Spiel gespielt wird. Ohne Ihre Zustimmung ist die Auswertung aus. Stimmen Sie zu, nutzt die App Firebase Analytics, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).</p>
+      <p>Nach Ihrem dritten gewonnenen Level fragt die App in einem eigenen Schritt, ob sie auswerten darf, wie das Spiel gespielt wird. Ohne Ihre Zustimmung ist die Auswertung aus. Stimmen Sie zu, nutzt die App Firebase Analytics, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).</p>
       <ul>
         <li><strong>Zweck:</strong> Spielbalance und Fehlersuche – welche Level zu schwer oder zu leicht sind, wo Spieler aufhören und wo Laden, Werbung oder Käufe technisch scheitern.</li>
-        <li><strong>Übertragene Daten:</strong> Spielereignisse (zum Beispiel Levelstart, Sieg, Niederlage, genutzte Hilfen; ob Sie Erinnerungen erlaubt haben und ob eine Erinnerung die App geöffnet hat; dass das Teilen-Menü für einen Schnappschuss geöffnet wurde; dass um eine Bewertung gebeten wurde), technische Fehlercodes, Ihre Einwilligungsstände, Gerätetyp, Systemversion, App-Version, eine app-interne Instanz-ID und die Grobregion, die Google aus der IP-Adresse ableitet. Keine Namen, keine E-Mail-Adressen, kein Alter, kein genauer Standort, kein Freitext und keine Werbe-ID (IDFA).</li>
+        <li><strong>Übertragene Daten:</strong> Spielereignisse (zum Beispiel Levelstart, Sieg, Niederlage, genutzte Hilfen und Mitbringsel, erreichte Sterne, Beginn und Abschluss eines Wochenend-Fests, dass das Tagesgeschenk ausgepackt wurde; ob Sie Erinnerungen erlaubt haben und ob eine Erinnerung die App geöffnet hat; dass das Teilen-Menü für einen Schnappschuss geöffnet wurde; dass um eine Bewertung gebeten wurde), angebotene und gezeigte Werbevideos, abgeschlossene Käufe mit Produkt, Betrag, Währung und der Transaktionsnummer des App Store (keine Zahlungsdaten), technische Fehlercodes, Ihre Einwilligungsstände, wenige Nutzereigenschaften (Installationstag, höchstes erreichtes Level, ob Sie je gekauft oder ein Werbevideo gesehen haben, ob die App aus dem App Store oder aus TestFlight stammt), Gerätetyp, Systemversion, App-Version, eine app-interne Instanz-ID und die Grobregion, die Google aus der IP-Adresse ableitet. Keine Namen, keine E-Mail-Adressen, kein Alter, kein genauer Standort, kein Freitext und keine Werbe-ID (IDFA).</li>
         <li><strong>Ereignisse vor Ihrer Antwort:</strong> Bevor Sie geantwortet haben, überträgt die App nichts.</li>
         <li><strong>Auswertung:</strong> Die Ereignisse werden täglich in Google BigQuery (Rechenzentrum Frankfurt am Main) exportiert und dort mit Abfragen sowie in Google Looker Studio als Übersicht ausgewertet. Wir sehen dabei nur zusammengefasste Werte und die Instanz-ID, keine Person.</li>
         <li><strong>Speicherdauer:</strong> In Firebase Analytics 14 Monate; die Exporttabellen in BigQuery werden nach 60 Tagen gelöscht.</li>
@@ -97,7 +96,7 @@
       <h2>7. Erinnerungen (lokale Mitteilungen)</h2>
       <p>Die App kann Sie mit Mitteilungen auf Ihrem Gerät erinnern: einmal, wenn Ihre Herzen wieder voll sind, mit einem Gruß von der Party, wenn Sie zwei Tage nicht gespielt haben, und zum Beginn des Wochenend-Fests am Freitag um 10 Uhr Ortszeit. Die Fest-Erinnerung entfällt, wenn Sie die Aufgabe des Fests schon geschafft haben. Alle Anlässe zusammen ergeben höchstens eine Erinnerung am Tag: Kämen an einem Tag zwei in Frage, sendet die App nur die frühere, und nach einer zugestellten Erinnerung kommt an diesem Tag keine weitere. Die Erinnerungen plant die App beim Verlassen selbst über iOS auf Ihrem Gerät; kehren Sie zurück, nimmt sie geplante Erinnerungen wieder zurück. Es gibt keinen Server, der Mitteilungen schickt (kein Push), und für die Erinnerungen werden keine Daten an uns oder an Dritte übertragen.</p>
       <ul>
-        <li><strong>Erlaubnis:</strong> Die App fragt erst, wenn Ihre Herzen aufgebraucht sind, und nur ein einziges Mal, ob sie Mitteilungen mit Hinweis und Ton senden darf. Ohne Ihre Erlaubnis plant sie keine Erinnerung.</li>
+        <li><strong>Erlaubnis:</strong> Die App fragt erst an der Herzsperre, wenn Ihre Herzen aufgebraucht sind (frühestens nach Ihrer zweiten Niederlage), und nur ein einziges Mal, ob sie Mitteilungen mit Hinweis und Ton senden darf. Ohne Ihre Erlaubnis plant sie keine Erinnerung.</li>
         <li><strong>Abschalten:</strong> In den Einstellungen der App schalten Sie Erinnerungen jederzeit ab; geplante Erinnerungen werden dann sofort zurückgenommen. Die Erlaubnis selbst ändern Sie in den iOS-Einstellungen unter „Mitteilungen“.</li>
         <li><strong>Auswertung:</strong> Nur wenn Sie der Auswertung zugestimmt haben, zählt die App, ob Sie die Erlaubnis erteilt haben und ob eine Erinnerung die App geöffnet hat (Ziffer 5).</li>
         <li><strong>Rechtsgrundlage:</strong> Ihre Erlaubnis in der Abfrage von iOS (Art. 6 Abs. 1 lit. a DSGVO).</li>
@@ -109,7 +108,7 @@
       <p>Nur wenn Sie der Auswertung zugestimmt haben, zählt die App, dass das Teilen-Menü geöffnet wurde (aus dem Album oder nach dem Finale, mit dem Kapitel) und dass um eine Bewertung gebeten wurde (Ziffer 5); das Bild selbst und der Empfänger werden nicht übertragen.</p>
 
       <h2>9. Werbung mit Unity LevelPlay</h2>
-      <p>Die App zeigt Werbevideos nur, wenn Sie selbst eines anfordern, um im Spiel eine Belohnung zu erhalten. Dafür nutzt sie Unity LevelPlay der Unity Technologies ApS, Niels Hemmingsens Gade 24, 1153 Kopenhagen, Dänemark, mit dem Werbenetz Unity Ads. Beim Laden einer Anzeige erhalten diese Dienste technische Angaben wie IP-Adresse, Gerätetyp, Systemversion, Spracheinstellung und Angaben zur Anzeige (gezeigt, angetippt, beendet).</p>
+      <p>Die App zeigt Werbevideos nur, wenn Sie selbst eines anfordern, um im Spiel eine Belohnung zu erhalten. Dafür nutzt sie Unity LevelPlay der Unity Technologies ApS, Niels Hemmingsens Gade 24, 1153 Kopenhagen, Dänemark, mit dem Werbenetz Unity Ads. Beim Laden einer Anzeige erhalten diese Dienste technische Angaben wie IP-Adresse, Gerätetyp, Systemversion, Spracheinstellung und Angaben zur Anzeige (gezeigt, angetippt, beendet). Vor dem ersten Werbeangebot – nie beim Spielstart – zeigt die App die Werbe-Tafel mit Ihrer Wahl und danach die Tracking-Abfrage von Apple; erst mit Ihren Antworten wird die Werbevermittlung gestartet.</p>
       <ul>
         <li><strong>Kindgerechte Werbung:</strong> Unser Werbekonto bei Unity ist so eingestellt, dass nur kindgerechte, nicht personalisierte Anzeigen ausgeliefert werden – unabhängig davon, wie Sie auf der Werbe-Tafel antworten.</li>
         <li><strong>Werbe-Tafel:</strong> Ihre Antwort dort geben wir als Einwilligungsstand an Unity weiter (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG).</li>
@@ -119,7 +118,7 @@
       <p>Unity kann Daten in die USA übertragen und stützt sich dafür auf das EU-US Data Privacy Framework und Standardvertragsklauseln. Weitere Angaben: unity.com/legal/game-player-and-app-user-privacy-policy.</p>
 
       <h2>10. Käufe über den App Store</h2>
-      <p>Käufe in der App wickelt Apple über den App Store ab (StoreKit). Zahlungsdaten erhalten wir nicht. Die App erfährt nur, ob ein Kauf erfolgreich war, um den gekauften Inhalt freizuschalten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Für die Verarbeitung durch Apple gilt die Datenschutzerklärung von Apple: apple.com/legal/privacy.</p>
+      <p>Käufe in der App wickelt Apple über den App Store ab (StoreKit). Zahlungsdaten erhalten wir nicht. Die App erfährt nur, ob ein Kauf erfolgreich war, dazu Produkt, Preis und die Transaktionsnummer des App Store, um den gekauften Inhalt freizuschalten. Nur wenn Sie der Auswertung zugestimmt haben, meldet die App den abgeschlossenen Kauf wie in Ziffer 5 beschrieben an Firebase Analytics. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Für die Verarbeitung durch Apple gilt die Datenschutzerklärung von Apple: apple.com/legal/privacy.</p>
 
       <h2>11. Testphase über TestFlight</h2>
       <p>Solange die App als Testfassung über TestFlight verteilt wird, einen Dienst der Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA, stellt Apple uns bereit: die E-Mail-Adresse, mit der Sie eingeladen wurden, ob und wann eine Testfassung installiert wurde, Absturzberichte mit technischen Angaben und Rückmeldungen, die Sie in TestFlight aktiv absenden, einschließlich Bildschirmfotos. Wir nutzen diese Angaben ausschließlich zur Fehlersuche und führen Rückmeldungen dabei unter einem Kürzel statt unter Ihrer E-Mail-Adresse. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b und f DSGVO. Die Angaben werden gelöscht, sobald die Testphase beendet ist.</p>
@@ -133,11 +132,15 @@
 
       <h2>14. Änderungen</h2>
       <p>Ändert sich der Funktionsumfang der App, ändern wir diese Erklärung entsprechend. Maßgeblich ist die jeweils hier veröffentlichte Fassung.</p>
+      <ul>
+        <li>25. Oktober 2026: Zeitpunkt der Auswertungsfrage berichtigt (nach dem dritten statt nach dem ersten gewonnenen Level); Abruf von zeit.json und Levelpack in Ziffer 2 und 4 genauer beschrieben; Tagesgeschenk, Sterne, Wochenend-Fest, Mitbringsel, Käufe und Nutzereigenschaften in Ziffer 3, 5 und 10 ergänzt; Zeitpunkt von Werbe-Tafel und Tracking-Abfrage in Ziffer 9 ergänzt.</li>
+        <li>Oktober 2026 (frühere Fassung): Absturzberichte (Ziffer 6), Erinnerungen einschließlich der Fest-Erinnerung (Ziffer 7) sowie Teilen und Bewertung (Ziffer 8) aufgenommen.</li>
+      </ul>
     </div>
 
     <div data-i18n="en">
       <h1>Privacy Policy for the “Dumpling Party” app</h1>
-      <p class="subtitle">Last updated: October 2026</p>
+      <p class="subtitle">Last updated: 25 October 2026</p>
 
       <h2>1. Controller</h2>
       <p>The controller within the meaning of the General Data Protection Regulation (GDPR) and other data protection provisions is:</p>
@@ -155,7 +158,7 @@
       <h2>2. The essentials first</h2>
       <p>Dumpling Party is a game without user accounts or sign-in. Your saved game stays on your device. The app connects to the internet only in the following cases:</p>
       <ul>
-        <li>It reads the current time and game values from static files on our website (section 4).</li>
+        <li>At every start it reads the current time (file zeit.json) and, when needed, a package of level values (level pack) from static files on our website (section 4).</li>
         <li>It sends usage events to Firebase Analytics – <strong>only if you have consented</strong> (section 5).</li>
         <li>It sends crash reports to Firebase Crashlytics – <strong>only if you have consented to analytics</strong> (section 6).</li>
         <li>It shows video ads via Unity LevelPlay when you request one yourself (section 9).</li>
@@ -165,18 +168,18 @@
       <p>The app requests no permission for camera, microphone, location or contacts and does not read your photos. It asks for permission to send notifications only once your hearts have run out, and only a single time (section 7). If you save a snapshot to your photos, iOS asks for permission for this (section 8). Apple’s tracking prompt may also appear (section 9).</p>
 
       <h2>3. Data on your device</h2>
-      <p>The app stores a saved game in the app’s protected area on your device. It contains game progress and settings, for example completed levels, your answers to the consent questions and whether strong outlines are enabled. It contains no information about you as a person and is not transmitted to us. Alongside it the app keeps the state of reminders (whether they are switched on, whether the app has already asked for permission, on which day a reminder last arrived and when the next one is scheduled) and a note whether the app has already asked for a rating once (sections 7 and 8). If you delete the app, the saved game is removed with it.</p>
+      <p>The app stores a saved game in the app’s protected area on your device. It contains game progress and settings, for example completed levels, stars, your win streak, your stock of souvenirs, the state of the daily task and the weekend party, on which day you last unpacked the daily gift, your answers to the consent questions and whether strong outlines are enabled. It contains no information about you as a person and is not transmitted to us. Alongside it the app keeps the state of reminders (whether they are switched on, whether the app has already asked for permission, on which day a reminder last arrived and when the next one is scheduled) and a note whether the app has already asked for a rating once (sections 7 and 8). The daily gift (one souvenir on the first opening of a day) is granted by the app solely on the basis of this saved game and the time; nothing is transmitted and no notification is sent for it. If you delete the app, the saved game is removed with it.</p>
       <p>Please note: if you have enabled Apple’s iCloud device backup, your device may include the app’s area in that backup. You control this in the iOS settings; we have no access to it.</p>
 
       <h2>4. Time and game values from our website</h2>
-      <p>So that waiting times cannot be bypassed by changing the device clock, the app reads the time from the response of our website sfr-services.de. From the same website the app may load a file with game values, for example the difficulty of individual levels. No data about you is sent, only the request itself.</p>
-      <p>The website is provided via GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When a file is requested, GitHub necessarily processes your IP address and details of the request (time, file requested). The legal basis is Art. 6(1)(f) GDPR; our legitimate interest lies in fair and up-to-date gameplay. For transfers to the USA GitHub relies on the EU-US Data Privacy Framework and standard contractual clauses. Further information: docs.github.com/site-policy/privacy-policies.</p>
+      <p>So that waiting times cannot be bypassed by changing the device clock, the app reads the time at every start from the response of our website sfr-services.de (file zeit.json). The same file states game values such as heart time, offer and ad values and the version of the current level pack; if a newer level pack is named there, the app loads it as a second file from the same website (values of existing levels only, for example their difficulty). Both requests happen even before and without any consent; they are not analytics. No data about you is sent, only the request itself with a timestamp against caching.</p>
+      <p>The website is provided via GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When a file is requested, GitHub necessarily processes your IP address and details of the request (time, file requested, technical identifier of the requesting app and of your system in the request). The legal basis is Art. 6(1)(f) GDPR; our legitimate interest lies in fair and up-to-date gameplay. For transfers to the USA GitHub relies on the EU-US Data Privacy Framework and standard contractual clauses. Further information: docs.github.com/site-policy/privacy-policies.</p>
 
       <h2>5. Analytics with Firebase Analytics (only with consent)</h2>
-      <p>After your first won level the app asks, as a separate step, whether it may analyse how the game is played. Without your consent analytics is off. If you consent, the app uses Firebase Analytics, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”).</p>
+      <p>After your third won level the app asks, as a separate step, whether it may analyse how the game is played. Without your consent analytics is off. If you consent, the app uses Firebase Analytics, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”).</p>
       <ul>
         <li><strong>Purpose:</strong> game balance and troubleshooting – which levels are too hard or too easy, where players stop, and where loading, ads or purchases fail technically.</li>
-        <li><strong>Data transmitted:</strong> game events (for example level start, win, loss, boosters used; whether you allowed reminders and whether a reminder opened the app; that the share sheet was opened for a snapshot; that a rating was requested), technical error codes, your consent states, device type, system version, app version, an app-internal instance ID and the coarse region Google derives from the IP address. No names, no email addresses, no age, no precise location, no free text and no advertising ID (IDFA).</li>
+        <li><strong>Data transmitted:</strong> game events (for example level start, win, loss, boosters and souvenirs used, stars earned, start and completion of a weekend party, that the daily gift was unpacked; whether you allowed reminders and whether a reminder opened the app; that the share sheet was opened for a snapshot; that a rating was requested), video ads offered and shown, completed purchases with product, amount, currency and the App Store transaction number (no payment data), technical error codes, your consent states, a few user properties (install day, highest level reached, whether you have ever purchased or watched a video ad, whether the app comes from the App Store or from TestFlight), device type, system version, app version, an app-internal instance ID and the coarse region Google derives from the IP address. No names, no email addresses, no age, no precise location, no free text and no advertising ID (IDFA).</li>
         <li><strong>Events before your answer:</strong> before you have answered, the app transmits nothing.</li>
         <li><strong>Analysis:</strong> the events are exported daily to Google BigQuery (data centre in Frankfurt am Main) and analysed there with queries and as an overview in Google Looker Studio. We only see aggregated values and the instance ID, never a person.</li>
         <li><strong>Retention:</strong> 14 months in Firebase Analytics; the export tables in BigQuery are deleted after 60 days.</li>
@@ -201,7 +204,7 @@
       <h2>7. Reminders (local notifications)</h2>
       <p>The app can remind you with notifications on your device: once when your hearts are full again, with a greeting from the party if you have not played for two days, and at the start of the weekend party, on Friday at 10 a.m. local time. The weekend-party reminder is dropped if you have already finished the party’s task. All occasions together give at most one reminder per day: if two would fall on the same day, the app sends only the earlier one, and after a reminder has been delivered no further one arrives that day. The app schedules reminders itself via iOS on your device when you leave; when you return, it withdraws scheduled reminders. There is no server sending notifications (no push), and no data is transmitted to us or to third parties for reminders.</p>
       <ul>
-        <li><strong>Permission:</strong> the app asks only once your hearts have run out, and only a single time, whether it may send notifications with alert and sound. Without your permission it schedules no reminder.</li>
+        <li><strong>Permission:</strong> the app asks only at the heart lock, once your hearts have run out (at the earliest after your second loss), and only a single time, whether it may send notifications with alert and sound. Without your permission it schedules no reminder.</li>
         <li><strong>Switching off:</strong> you can switch reminders off at any time in the app’s settings; scheduled reminders are then withdrawn immediately. You change the permission itself in the iOS settings under “Notifications”.</li>
         <li><strong>Analytics:</strong> only if you have consented to analytics does the app count whether you granted permission and whether a reminder opened the app (section 5).</li>
         <li><strong>Legal basis:</strong> your permission in the iOS prompt (Art. 6(1)(a) GDPR).</li>
@@ -213,7 +216,7 @@
       <p>Only if you have consented to analytics does the app count that the share sheet was opened (from the album or after the finale, with the chapter) and that a rating was requested (section 5); the picture itself and the recipient are not transmitted.</p>
 
       <h2>9. Advertising with Unity LevelPlay</h2>
-      <p>The app shows video ads only when you request one yourself to receive an in-game reward. For this it uses Unity LevelPlay by Unity Technologies ApS, Niels Hemmingsens Gade 24, 1153 Copenhagen, Denmark, with the ad network Unity Ads. When an ad is loaded, these services receive technical information such as IP address, device type, system version, language setting and details about the ad (shown, tapped, completed).</p>
+      <p>The app shows video ads only when you request one yourself to receive an in-game reward. For this it uses Unity LevelPlay by Unity Technologies ApS, Niels Hemmingsens Gade 24, 1153 Copenhagen, Denmark, with the ad network Unity Ads. When an ad is loaded, these services receive technical information such as IP address, device type, system version, language setting and details about the ad (shown, tapped, completed). Before the first ad offer – never at game start – the app shows the advertising panel with your choice and then Apple’s tracking prompt; only with your answers is ad mediation started.</p>
       <ul>
         <li><strong>Child-appropriate ads:</strong> our Unity advertising account is set so that only child-appropriate, non-personalised ads are served – regardless of how you answer on the advertising panel.</li>
         <li><strong>Advertising panel:</strong> we pass your answer there to Unity as your consent state (Art. 6(1)(a) GDPR, Section 25(1) TDDDG).</li>
@@ -223,7 +226,7 @@
       <p>Unity may transfer data to the USA and relies on the EU-US Data Privacy Framework and standard contractual clauses for this. Further information: unity.com/legal/game-player-and-app-user-privacy-policy.</p>
 
       <h2>10. Purchases via the App Store</h2>
-      <p>In-app purchases are processed by Apple via the App Store (StoreKit). We receive no payment data. The app only learns whether a purchase succeeded in order to unlock the purchased content. The legal basis is Art. 6(1)(b) GDPR (performance of a contract). Apple’s privacy policy applies to its processing: apple.com/legal/privacy.</p>
+      <p>In-app purchases are processed by Apple via the App Store (StoreKit). We receive no payment data. The app only learns whether a purchase succeeded, together with the product, price and App Store transaction number, in order to unlock the purchased content. Only if you have consented to analytics does the app report the completed purchase to Firebase Analytics as described in section 5. The legal basis is Art. 6(1)(b) GDPR (performance of a contract). Apple’s privacy policy applies to its processing: apple.com/legal/privacy.</p>
 
       <h2>11. Test phase via TestFlight</h2>
       <p>While the app is distributed as a test version via TestFlight, a service of Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA, Apple provides us with: the email address used to invite you, whether and when a test version was installed, crash reports with technical details, and feedback you actively submit in TestFlight, including screenshots. We use this information solely to find defects and keep feedback under a code instead of your email address. The legal basis is Art. 6(1)(b) and (f) GDPR. The information is deleted once the test phase ends.</p>
@@ -237,6 +240,10 @@
 
       <h2>14. Changes</h2>
       <p>If the app’s functionality changes, we will amend this policy accordingly. The version published here at any given time is the authoritative one.</p>
+      <ul>
+        <li>25 October 2026: time of the analytics question corrected (after the third instead of the first won level); retrieval of zeit.json and the level pack described in more detail in sections 2 and 4; daily gift, stars, weekend party, souvenirs, purchases and user properties added in sections 3, 5 and 10; timing of the advertising panel and the tracking prompt added in section 9.</li>
+        <li>October 2026 (earlier version): crash reports (section 6), reminders including the weekend-party reminder (section 7), sharing and rating (section 8) added.</li>
+      </ul>
     </div>
 
   </div>
