@@ -1,12 +1,12 @@
 {
-    "schemaVersion": 1,
-    "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort.",
-    "levelPack": {
-        "version": 10,
-        "path": "levels/levels-v10.json",
-        "sha256": "a7acb5cb39b9bd8852aee0720304b890143845a762a1c029bb8c8e418f7f8a19",
-        "rules": "r5",
-        "minBuild": 828,
-        "signature": "HRW1TkVKzO2Et2mM8SmEfx89LDk3yTWDDQwwPV7c+m/lrVvPaGMFOzCLFqGR4R5/C7R7z56IL1B2uVuBRgL8dxMct4gooC5J33rTxTDtLz9bqodCic/uA71Bf0qzYwwwshCyAEddFnhEjwMTcW6OMUkDGB4aLLXfy6Msd8U92GWlsyggF2zC8VosFieygLU3+VRNl3x4DpkmVA5BbQIoRAC1L32yYVyzYMVWqXiIWF45s8UTBR/2F+4hT/cRXu8V/QCv5dvBa/cRZ6Sf/g8WtonPkkdBDZA69EWwcA+65mo6kLne+a8K0QHEUvrbm2p5JfDN2zrh8mN0R6I10ofNSpjFikpRHF8d92608G0cPVfePkz8AqAuKPCVTXcLyI0KTckkXLCr0APcren058fKnCnRr/WdnZbz69zq5gFc/uoiEUPkjfivKWIgUntLveFRfQCrWgzGXvyVbt44bfGyexVDW4kscgYBHnpB/65eTltk3hRH4NmLBu51knG9H9u1"
-    }
+  "schemaVersion": 1,
+  "zweck": "Zeitquelle fuer Dumpling Party (ENT-378): gelesen wird die Date-Kopfzeile der Antwort.",
+  "levelPack": {
+    "version": 10,
+    "path": "levels/levels-v10.json",
+    "sha256": "a7acb5cb39b9bd8852aee0720304b890143845a762a1c029bb8c8e418f7f8a19",
+    "rules": "r5",
+    "minBuild": 828,
+    "signature": "HRW1TkVKzO2Et2mM8SmEfx89LDk3yTWDDQwwPV7c+m/lrVvPaGMFOzCLFqGR4R5/C7R7z56IL1B2uVuBRgL8dxMct4gooC5J33rTxTDtLz9bqodCic/uA71Bf0qzYwwwshCyAEddFnhEjwMTcW6OMUkDGB4aLLXfy6Msd8U92GWlsyggF2zC8VosFieygLU3+VRNl3x4DpkmVA5BbQIoRAC1L32yYVyzYMVWqXiIWF45s8UTBR/2F+4hT/cRXu8V/QCv5dvBa/cRZ6Sf/g8WtonPkkdBDZA69EWwcA+65mo6kLne+a8K0QHEUvrbm2p5JfDN2zrh8mN0R6I10ofNSpjFikpRHF8d92608G0cPVfePkz8AqAuKPCVTXcLyI0KTckkXLCr0APcren058fKnCnRr/WdnZbz69zq5gFc/uoiEUPkjfivKWIgUntLveFRfQCrWgzGXvyVbt44bfGyexVDW4kscgYBHnpB/65eTltk3hRH4NmLBu51knG9H9u1"
+  }
 }
