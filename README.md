@@ -37,11 +37,15 @@ Sprache.** Wer einen Absatz ergaenzt, ergaenzt zwei.
 | `impressum.html` | `/impressum` | Impressum nach §5 DDG und §18 Abs. 2 MStV |
 | `datenschutz.html` | `/datenschutz` | Datenschutz der **Webseite** |
 | `dumpling-party/datenschutz.html` | `/dumpling-party/datenschutz` | Datenschutz der **App** |
+| `hausgeist/index.html` | `/hausgeist/` | Hausgeist: Hilfe, Kontakt (Support-URL im App Store) |
+| `hausgeist/datenschutz.html` | `/hausgeist/datenschutz` | Datenschutz der App **Hausgeist** |
 
 GitHub Pages liefert jede Seite auch ohne die Endung `.html` aus; die kurze
 Form ist die, die nach aussen gegeben wird.
 
-### Die App-Seite ist bewusst nicht verlinkt
+### Die App-Seiten sind bewusst nicht verlinkt
+
+Gilt fuer `dumpling-party/` und `hausgeist/` gleichermassen.
 
 `dumpling-party/datenschutz.html` gehoert zur App „Dumpling Party", nicht zur
 Firmenwebseite. Sie wird hier nur **gehostet**, weil die Domain hier liegt.
