@@ -37,8 +37,8 @@ Sprache.** Wer einen Absatz ergaenzt, ergaenzt zwei.
 | `impressum.html` | `/impressum` | Impressum nach §5 DDG und §18 Abs. 2 MStV |
 | `datenschutz.html` | `/datenschutz` | Datenschutz der **Webseite** |
 | `dumpling-party/datenschutz.html` | `/dumpling-party/datenschutz` | Datenschutz der **App** |
-| `hausgeist/index.html` | `/hausgeist/` | Hausgeist: Hilfe, Kontakt (Support-URL im App Store) |
-| `hausgeist/datenschutz.html` | `/hausgeist/datenschutz` | Datenschutz der App **Hausgeist** |
+| `hausgeist/index.html` | `/hausgeist/` | Family Ghost: Hilfe, Kontakt (Support-URL im App Store) |
+| `hausgeist/datenschutz.html` | `/hausgeist/datenschutz` | Datenschutz der App **Family Ghost** |
 
 GitHub Pages liefert jede Seite auch ohne die Endung `.html` aus; die kurze
 Form ist die, die nach aussen gegeben wird.
