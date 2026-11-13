@@ -37,15 +37,16 @@ Sprache.** Wer einen Absatz ergaenzt, ergaenzt zwei.
 | `impressum.html` | `/impressum` | Impressum nach §5 DDG und §18 Abs. 2 MStV |
 | `datenschutz.html` | `/datenschutz` | Datenschutz der **Webseite** |
 | `dumpling-party/datenschutz.html` | `/dumpling-party/datenschutz` | Datenschutz der **App** |
-| `hausgeist/index.html` | `/hausgeist/` | Family Ghost: Hilfe, Kontakt (Support-URL im App Store) |
-| `hausgeist/datenschutz.html` | `/hausgeist/datenschutz` | Datenschutz der App **Family Ghost** |
+| `family-ghost/index.html` | `/family-ghost/` | Family Ghost: Hilfe, Kontakt (Support-URL im App Store) |
+| `family-ghost/datenschutz.html` | `/family-ghost/datenschutz` | Datenschutz der App **Family Ghost** |
+| `hausgeist/*.html` | `/hausgeist/…` | Weiterleitung auf `/family-ghost/` (alter Name, in frühen TestFlight-Builds verlinkt) |
 
 GitHub Pages liefert jede Seite auch ohne die Endung `.html` aus; die kurze
 Form ist die, die nach aussen gegeben wird.
 
 ### Die App-Seiten sind bewusst nicht verlinkt
 
-Gilt fuer `dumpling-party/` und `hausgeist/` gleichermassen.
+Gilt fuer `dumpling-party/` und `family-ghost/` gleichermassen.
 
 `dumpling-party/datenschutz.html` gehoert zur App „Dumpling Party", nicht zur
 Firmenwebseite. Sie wird hier nur **gehostet**, weil die Domain hier liegt.
